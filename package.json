@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack-dev-server --config webpack.dev.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,12 @@
   "homepage": "https://github.com/daikon0/typescript-health-care#readme",
   "dependencies": {
     "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "ts-loader": "^7.0.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   }
 }
